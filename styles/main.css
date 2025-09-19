@@ -1,0 +1,28 @@
+.contenedor{
+    background-color: var(--color-background);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+    gap: 1.5rem; /* espacio entre las tarjetas */
+}
+.card-modelo{
+    display: flex;
+    flex-direction: column;
+    height: 25em;
+    background-color: var(--color-background);
+    border: 2px solid var(--color-borde-suave);
+    border-radius: var(--radio-contenedor);
+}
+.foto-modelo{
+    border-radius: var(--radio-contenedor);
+    width: 100%;
+    height: 150px;
+}
+.info-modelo{
+    padding: 1em;
+}
+.fuente-fuerte{
+    color: var(--color-fuente-fuerte);
+}
+.fuente-medio{
+    color: var(--color-fuente-medio);
+}

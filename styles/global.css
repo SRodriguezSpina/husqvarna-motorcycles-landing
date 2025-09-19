@@ -1,0 +1,116 @@
+:root {
+  --color-primario: #2C3464;
+  /* --color-primario-hover: #FFFFFF; */
+  /* --color-primario-active: #c00000; */
+  --color-secundario: #4D5E7C;
+  /*--color-secundario-hover: #e4e4e4;*/    /*profundizo el primario*/
+  /*--color-secundario-active: #cfcfcf;*/   /*profundizo el secundario*/
+  --color-background: #fafafa;
+  --color-fuente-fuerte: #000000;
+  --color-fuente-medio: #4D5E7C;
+  --color-fuente-suave: #9EA7B6;
+  --color-borde-suave: #ccbcbc;
+  --color-error: #dc2626;
+  --ancho-contenedor: 71.80rem;
+  --radio-contenedor: 0.5rem;
+  /* --input-height: 2.5rem; */
+  --font-family: "Work Sans", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-background);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+  font-family: var(--font-family);
+  padding-top: 4rem; /*para evitar que el header lo tape*/
+}
+img {
+  /* width: 100%;
+  height: 100%;
+  border-radius: var(--radio-elementos); */
+}
+
+.filas {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+}
+
+h1,
+h2 {
+  color: var(--color-fuente-fuerte);
+}
+
+h1 {
+  font-size: 2.6rem;
+}
+h2 {
+  font-size: 1.3rem;
+}
+h3 {
+  font-size: 1.2rem;
+  text-decoration: underline 1px ;
+}
+p {
+  font-size: 1rem;
+}
+.fuente-oscuro {
+  color: var(--color-fuente-fuerte);
+}
+.contenedor {
+  width: 100%;
+  background-color: var(--color-fuente-suave);
+  border-radius: var(--radio-contenedor);
+  padding: 1.5rem;
+}
+.elementos-espaciado {
+  display: flex;
+  flex-direction: column;
+  gap: var(--margen-entre-inputs);
+}
+.error {
+  color: var(--color-error);
+  font-size: 0.9rem;
+  margin-top: 0.25rem;
+}
+.color-secundario {
+  color: var(--color-secundario);
+}
+.color-medio {
+  color: var(--color-fuente-medio);
+}
+/* Breakpoint tablet */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 2.1rem;
+  }
+}
+
+/* Breakpoint mobile */
+@media (max-width: 640px) {
+  h1{
+    font-size: 1.7rem;
+  }
+  h2 {
+    font-size: 1.1rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+  body{
+    padding-top: 0rem;
+    padding-bottom: 4rem;
+  }
+}
