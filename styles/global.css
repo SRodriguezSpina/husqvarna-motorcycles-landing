@@ -41,6 +41,7 @@ header{
     position: fixed;
     top: 0;
     width: 100%;
+    padding: 1em 3em;
 }
 img {
   /* width: 100%;
