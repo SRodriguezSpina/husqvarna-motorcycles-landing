@@ -27,10 +27,20 @@ body {
   background-color: var(--color-background);
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   overflow-x: hidden;
   font-family: var(--font-family);
   padding-top: 4rem; /*para evitar que el header lo tape*/
+}
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 img {
   /* width: 100%;
@@ -89,14 +99,14 @@ p {
   color: var(--color-fuente-medio);
 }
 /* Breakpoint tablet */
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
   h1 {
     font-size: 2.1rem;
   }
-}
+} */
 
 /* Breakpoint mobile */
-@media (max-width: 640px) {
+/* @media (max-width: 640px) {
   h1{
     font-size: 1.7rem;
   }
@@ -113,4 +123,4 @@ p {
     padding-top: 0rem;
     padding-bottom: 4rem;
   }
-}
+} */
