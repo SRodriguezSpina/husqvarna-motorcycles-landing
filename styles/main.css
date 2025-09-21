@@ -13,13 +13,9 @@
     border: 2px solid var(--color-borde-suave);
     border-radius: var(--radio-contenedor);
 } */
-.header-fade{
-    height: 120px;
-    width: 60%;
-    right: 0;
+.foto-header{
     position: absolute;
-    mask-image: linear-gradient(to left, rgba(0,0,0), transparent);
-    z-index: -1;
+    
 }
 /* .foto-modelo{
     border-radius: var(--radio-contenedor);

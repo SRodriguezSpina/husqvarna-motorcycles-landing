@@ -35,6 +35,10 @@ body {
   padding-top: 4rem; /*para evitar que el header lo tape*/
 }
 header{
+    background-image: url(/assets/images/fade-banner.png); /* cambiar por foto invernal*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: row;
     align-items: center;
