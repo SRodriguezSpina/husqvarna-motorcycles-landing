@@ -13,10 +13,6 @@
     border: 2px solid var(--color-borde-suave);
     border-radius: var(--radio-contenedor);
 } */
-.foto-header{
-    position: absolute;
-    
-}
 /* .foto-modelo{
     border-radius: var(--radio-contenedor);
     width: 100%;
