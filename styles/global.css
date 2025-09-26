@@ -1,8 +1,8 @@
 :root {
   --color-primario: #2C3464;
+  --color-secundario: #4D5E7C;
   /* --color-primario-hover: #FFFFFF; */
   /* --color-primario-active: #c00000; */
-  --color-secundario: #4D5E7C;
   /*--color-secundario-hover: #e4e4e4;*/    /*profundizo el primario*/
   /*--color-secundario-active: #cfcfcf;*/   /*profundizo el secundario*/
   --color-background: #fafafa;
@@ -47,9 +47,6 @@ header{
     width: 100%;
     height: 10em;
     padding: 1em 3em;
-}
-main{
-  padding-top: 10em;
 }
 .bandera{
   height: 2em;
