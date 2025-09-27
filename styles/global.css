@@ -7,7 +7,7 @@
   /*oscurezco en active*/
   --color-primario-active: #0d2644;
   /* --color-secundario-active: #cfcfcf;*/
-  
+
   --color-background: #fafafa;
   --color-fuente-fuerte: #000000;
   --color-fuente-claro: #dfdfdf;
@@ -18,7 +18,7 @@
   /*lo dejo y lo cambio para las cards*/
   --radio-contenedor: 0.5rem;
   /*ídem arriba, tengo que moverlo a css de modelos*/
-  --font-family: "Work Sans", sans-serif;
+  --font-family: "preconnect", sans-serif;
 }
 
 * {
@@ -70,19 +70,29 @@ header {
   background-color: var(--color-primario);
   color: var(--color-fuente-claro);
   transition: background-color 0.25s ease,
-              color 0.1s ease,
-              transform 0.1s ease,
-              box-shadow 0.25s ease;
+    color 0.1s ease,
+    transform 0.1s ease,
+    box-shadow 0.25s ease;
+  font-size: 1rem;
+  font-weight: 600;
 }
+
 .boton-navegacion:hover {
   background-color: var(--color-primario-hover);
   transform: translateY(-2px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
+
 .boton-navegacion:active {
   background-color: var(--color-primario-active);
   transform: translateY(0);
   box-shadow: none;
+}
+
+.logo {
+  /*height: 50px;*/
+  height: 4em;
+  width: auto;
 }
 
 .bandera {

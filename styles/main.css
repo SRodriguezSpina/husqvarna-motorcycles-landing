@@ -17,11 +17,6 @@ main {
     justify-content: center;
 }
 
-.logo {
-    height: 50px;
-    width: auto;
-}
-
 .fuente-fuerte {
     color: var(--color-fuente-fuerte);
 }
