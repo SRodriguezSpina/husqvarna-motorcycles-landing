@@ -1,19 +1,23 @@
 :root {
-  --color-primario: #2C3464;
-  --color-secundario: #4D5E7C;
-  /* --color-primario-hover: #FFFFFF; */
-  /* --color-primario-active: #c00000; */
-  /*--color-secundario-hover: #e4e4e4;*/    /*profundizo el primario*/
-  /*--color-secundario-active: #cfcfcf;*/   /*profundizo el secundario*/
+  --color-primario: #143761;
+  --color-secundario: #ffcc00;
+  /*aclaro el color en hover*/
+  --color-primario-hover: #1e5497;
+  /* --color-secundario-hover: #e4e4e4;*/
+  /*oscurezco en active*/
+  --color-primario-active: #0d2644;
+  /* --color-secundario-active: #cfcfcf;*/
+  
   --color-background: #fafafa;
   --color-fuente-fuerte: #000000;
+  --color-fuente-claro: #dfdfdf;
   --color-fuente-medio: #4D5E7C;
   --color-fuente-suave: #9EA7B6;
   --color-borde-suave: #ccbcbc;
-  --color-error: #dc2626;
   --ancho-contenedor: 71.80rem;
+  /*lo dejo y lo cambio para las cards*/
   --radio-contenedor: 0.5rem;
-  /* --input-height: 2.5rem; */
+  /*ídem arriba, tengo que moverlo a css de modelos*/
   --font-family: "Work Sans", sans-serif;
 }
 
@@ -32,23 +36,56 @@ body {
   align-items: center;
   overflow-x: hidden;
   font-family: var(--font-family);
-  /*padding-top: 4rem; /*para evitar que el header lo tape*/
 }
-header{
-    background-image: url(/assets/images/vitpilen801.png); /* cambiar por foto invernal*/
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 10em;
-    padding: 1em 3em;
+
+header {
+  background-image: url(/assets/images/vitpilen801.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: fixed;
+  /* el header me sigue a lo largo de la página */
+  top: 0;
+  width: 100%;
+  height: 10em;
+  padding: 1em 3em;
 }
-.bandera{
+
+.container-boton {
+  padding: 1em 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.boton-navegacion {
+  height: 2.5em;
+  padding: 0 1.8em;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--color-primario);
+  color: var(--color-fuente-claro);
+  transition: background-color 0.25s ease,
+              color 0.1s ease,
+              transform 0.1s ease,
+              box-shadow 0.25s ease;
+}
+.boton-navegacion:hover {
+  background-color: var(--color-primario-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+.boton-navegacion:active {
+  background-color: var(--color-primario-active);
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.bandera {
   height: 2em;
   width: auto;
   align-self: flex-start;
@@ -63,40 +100,50 @@ h2 {
 h1 {
   font-size: 2.6rem;
 }
+
 h2 {
   font-size: 1.3rem;
 }
+
 h3 {
   font-size: 1.2rem;
 }
+
 p {
   font-size: 1rem;
 }
+
 .fuente-oscuro {
   color: var(--color-fuente-fuerte);
 }
+
 .contenedor {
   width: 100%;
   background-color: var(--color-fuente-suave);
   border-radius: var(--radio-contenedor);
   padding: 1.5rem;
 }
+
 .elementos-espaciado {
   display: flex;
   flex-direction: column;
   gap: var(--margen-entre-inputs);
 }
+
 .error {
   color: var(--color-error);
   font-size: 0.9rem;
   margin-top: 0.25rem;
 }
+
 .color-secundario {
   color: var(--color-secundario);
 }
+
 .color-medio {
   color: var(--color-fuente-medio);
 }
+
 /* Breakpoint tablet */
 /* @media (max-width: 1024px) {
   h1 {
