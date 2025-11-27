@@ -10,11 +10,23 @@ main {
     /*agregar gap parametrizado*/
 }
 
-.inner-main {
-    width: 70%;
+.new-model{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    gap: 3em
+}
+.new-model-img img{
+    border-radius: 30px;
+    width:25em;
+    height: auto
+    /*que todas las imágenes tengan un mismo tamaño, recortar e importar así el navegador no hace el rezicing*/
+    /*cuando haga ese cambio, esta descripcion la voy a poder borrar*/
+}
+.new-model-desc{
+    gap: 3em;
+}
+.new-model-desc h2{
+    justify-self: center;
 }
 
 .fuente-fuerte {
