@@ -1,19 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foro Husqvarna</title>
+    <title>Husqvarna Landing</title>
     <!-- Fuentes y Estilos -->
-     <link rel="stylesheet" href="../styles/main.css" />
-     <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Saira:ital,wdth,wght@0,50..125,100..900;1,50..125,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/global.css" />
 </head>
 
 <body>
     <header>
-        <img class="logo" src="../assets/images/husqvarna-logo.png" alt="husqvarna-logo" />
-        <h1 class="fuente-fuerte">Husqvarna Motorcycles</h1>
+        <div class="topbar">
+            <div class="socials">
+                <!-- Instagram, X y Facebook? -->
+                <img src="../assets/icons/instagram-logo.svg">
+                <img src="../assets/icons/facebook-logo.svg">
+                <img src="../assets/icons/x-logo.svg">
+            </div>
+            <img class="logo" src="../assets/images/husqvarna-logo.png" alt="husqvarna-logo" />
+            <img class="bandera" src="../assets/images/banderaSuecia.png" alt="flag" />
+        </div>
+        <section class="hero">
+            <h1>Husqvarna <u class="sub">Motorcycles</u></h1>
+            <button class="boton-navegacion">Consultar segmentos</button>
+        </section>
     </header>
-    
+
+    <main>
+        <section class="new-model">
+            <div class="new-model-img">
+                <!-- contenedor con imagen -->
+                <img src="../assets/images/v801-1.jpg" />
+            </div>
+            <div class="new-model-desc">
+                <!-- contenedor con texto +info-->
+                <h2>Lo mas nuevo</h2>
+                <div>
+                    <h3>Vitpilen 801</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Dolore hic fugit dicta nemo ab totam dolorem repellat
+                        numquam ratione delectus blanditiis enim, magnam
+                        perspiciatis aliquam corrupti alias, in deleniti? Harum.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>

@@ -1,37 +1,67 @@
-/* .contenedor{
+main {
     background-color: var(--color-background);
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
-    gap: 1.5rem;
-    margin-top: 1em;
-} */
-/* .card-modelo{
+    padding-top: 10em;
+    padding: 10em 4em 0;
+    /*padding de 10em para que no me tape el header*/
+    width: 100%;
     display: flex;
     flex-direction: column;
-    height: 25em;
-    background-color: var(--color-background);
-    border: 2px solid var(--color-borde-suave);
-    border-radius: var(--radio-contenedor);
-} */
-.foto-header{
-    position: absolute;
-    
+    align-items: center;
+    /*agregar gap parametrizado*/
 }
-/* .foto-modelo{
-    border-radius: var(--radio-contenedor);
-    width: 100%;
-    height: 150px;
-} */
-.logo{
-    height: 50px;
-    width: auto;
+
+.topbar {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
-.info-modelo{
-    padding: 1em;
+.socials{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
 }
-.fuente-fuerte{
+
+.hero{
+    padding: 3em 5em;
+    align-items: center;
+}
+.hero h1{
+    font-size: 3em;
+    color: var(--color-primario);
+    padding: 1em 0em
+}
+.hero button{
+    margin-left: 6em;
+}
+.sub {
+  text-decoration: underline;
+  text-decoration-color: var(--color-secundario); /* Amarillo Husqvarna */
+  text-decoration-thickness: 4px;
+}
+
+.new-model {
+    display: flex;
+    flex-direction: row;
+    gap: 3em
+}
+
+.new-model-img img {
+    border-radius: 30px;
+    width: 25em;
+    height: auto
+        /*que todas las imágenes tengan un mismo tamaño, recortar e importar así el navegador no hace el rezicing*/
+        /*cuando haga ese cambio, esta descripcion la voy a poder borrar*/
+}
+
+.new-model-desc {
+    gap: 3em;
+}
+
+.new-model-desc h2 {
+    justify-self: center;
+}
+
+.fuente-fuerte {
     color: var(--color-fuente-fuerte);
-}
-.fuente-medio{
-    color: var(--color-fuente-medio);
 }
