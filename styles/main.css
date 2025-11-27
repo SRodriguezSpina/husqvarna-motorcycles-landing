@@ -10,22 +10,55 @@ main {
     /*agregar gap parametrizado*/
 }
 
-.new-model{
+.topbar {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.socials{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.hero{
+    padding: 3em 5em;
+    align-items: center;
+}
+.hero h1{
+    font-size: 3em;
+    color: var(--color-primario);
+    padding: 1em 0em
+}
+.hero button{
+    margin-left: 6em;
+}
+.sub {
+  text-decoration: underline;
+  text-decoration-color: var(--color-secundario); /* Amarillo Husqvarna */
+  text-decoration-thickness: 4px;
+}
+
+.new-model {
     display: flex;
     flex-direction: row;
     gap: 3em
 }
-.new-model-img img{
+
+.new-model-img img {
     border-radius: 30px;
-    width:25em;
+    width: 25em;
     height: auto
-    /*que todas las imágenes tengan un mismo tamaño, recortar e importar así el navegador no hace el rezicing*/
-    /*cuando haga ese cambio, esta descripcion la voy a poder borrar*/
+        /*que todas las imágenes tengan un mismo tamaño, recortar e importar así el navegador no hace el rezicing*/
+        /*cuando haga ese cambio, esta descripcion la voy a poder borrar*/
 }
-.new-model-desc{
+
+.new-model-desc {
     gap: 3em;
 }
-.new-model-desc h2{
+
+.new-model-desc h2 {
     justify-self: center;
 }
 
