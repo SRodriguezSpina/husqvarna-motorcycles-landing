@@ -39,7 +39,8 @@ body {
 }
 
 header {
-  background: url(../assets/images/svartpilen801.png) no-repeat center center; 
+  background: linear-gradient(to top, rgba(14,37,61,1) 0%, rgba(14,37,61,0) 30%),
+  url(../assets/images/svartpilen801.png) no-repeat center center; 
   top: 0;
   width: 100%;
   height: 100vh;
@@ -54,36 +55,37 @@ header {
 }
 
 .boton-navegacion {
-  height: 3em;
+  height: 4em;
   padding: 0 1.8em;
-  border-radius: 9999px;
-  border: none;
+  border-radius: 12px;
+  border: 3px solid transparent;
   cursor: pointer;
   background-color: var(--color-primario);
   color: var(--color-fuente-claro);
   transition: background-color 0.25s ease,
     color 0.1s ease,
     transform 0.1s ease,
-    box-shadow 0.25s ease;
+    box-shadow 0.25s ease,
+    border 0.25s ease;
   font-size: 1rem;
   font-weight: 600;
 }
 
 .boton-navegacion:hover {
-  background-color: var(--color-primario-hover);
+  background-color: transparent;
+  color: var(--color-primario);
+  border-color: var(--color-principal);
   transform: translateY(-2px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
 .boton-navegacion:active {
-  background-color: var(--color-primario-active);
   transform: translateY(0);
-  box-shadow: none;
 }
 
 .logo {
   /*height: 50px;*/
-  height: 4em;
+  height: 3em;
   width: auto;
 }
 
@@ -95,7 +97,7 @@ header {
 
 h1,
 h2 {
-  color: var(--color-fuente-fuerte);
+  color: white;
 }
 
 h1 {
