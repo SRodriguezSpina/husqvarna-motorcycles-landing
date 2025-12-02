@@ -2,7 +2,7 @@ main {
     background-color: white;
     background: linear-gradient(to bottom, rgba(14,37,61,1) 0%, rgba(14,37,61,0) 30%);
     padding-top: 10em;
-    padding: 3em 4em 0;
+    padding: 0em 4em 0;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -39,6 +39,26 @@ main {
   text-decoration-thickness: 4px;
 }
 
+.values-bar{
+    background-color:rgb(92, 89, 81);
+    height: 5em;
+    width: 100vw;
+    padding:0 5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.value{
+    display: flex;
+    flex-direction: row;
+    gap: 0.8em;
+    align-items: center;
+}
+.value p{
+    font-size: 1.5em;
+    color: var(--color-secundario);
+}
+
 .new-model {
     display: flex;
     flex-direction: column;
@@ -46,19 +66,29 @@ main {
     padding: 0 8em;
     color: greenyellow;
 }
-.new-model-1{
+.card-new-model-1{
+    /* abstraer CSS común a card-modelo */
+    border-radius: 2em;
+    background-color: rgb(66, 66, 66);
+    padding: 1em 1em;
     display: flex;
+    gap: 4em;
+    /* hasta acá */
     flex-direction: row;
-    gap: 4em
 }
-.new-model-2{
+.card-new-model-2{
+    /* de acá */
+    border-radius: 2em;
+    background-color: rgb(66, 66, 66);
+    padding: 1em 1em;    
     display: flex;
+    gap: 4em;
+    /* abstraer */
     flex-direction: row-reverse;
-    gap: 4em
 }
 
 .new-model-img img {
-    border-radius: 10px;
+    border-radius: 1em;
     width: 30em;
     height: auto
         /*que todas las imágenes tengan un mismo tamaño, recortar e importar así el navegador no hace el rezicing*/
