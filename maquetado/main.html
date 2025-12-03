@@ -34,24 +34,98 @@
     </header>
 
     <main>
-        <section class="new-model">
-            <div class="new-model-img">
-                <!-- contenedor con imagen -->
-                <img src="../assets/images/v801-1.jpg" />
+        <section class="values-bar">
+            <div class="value">
+                <div class="circle">
+                    <img src="../assets/icons/medal.svg" />
+                </div>
+                <p>Calidad Premium</p>
             </div>
-            <div class="new-model-desc">
-                <!-- contenedor con texto +info-->
-                <h2>Lo mas nuevo</h2>
-                <div>
+            <div class="value">
+                <div class="circle">
+                    <img src="../assets/icons/speedometer.svg" />
+                </div>
+                <p>Performance</p>
+            </div>
+            <div class="value">
+                <div class="circle">
+                    <img src="../assets/icons/shield.svg" />
+                </div>
+                <p>Seguridad</p>
+            </div>
+            <div class="value">
+                <div class="circle">
+                    <img src="../assets/icons/wrench.svg" />
+                </div>
+                <p>Fiabilidad</p>
+            </div>
+        </section>
+
+        <section class=" grid segments-cards-container">
+            <div class="segment-card">
+                <h4>Motocross</h4>
+                <img src="../assets/images/segmentos/motocross-card.jpg"/>
+            </div>
+            <div class="segment-card">
+                <h4>Enduro</h4>
+                <img src="../assets/images/segmentos/enduro-card.jpg"/>
+            </div>
+            <div class="segment-card">
+                <h4>Travel</h4>
+                <img src="../assets/images/segmentos/travel-card.jpg"/>
+            </div>
+            <div class="segment-card">
+                <h4>Naked</h4>
+                <img src="../assets/images/segmentos/naked-card.jpg"/>
+            </div>
+            <div class="segment-card">
+                <h4>Supermoto</h4>
+                <img src="../assets/images/segmentos/supermoto-card.jpg"/>
+            </div>
+            <div class="segment-card">
+                <h4>Electric</h4>
+                <img src="../assets/images/segmentos/electric-card.jpg"/>
+            </div>
+        </section>
+
+
+        <section class="new-model">
+            <!-- padding lateral al section para que las cards queden un poco mas centradas -->
+            <!-- flex direction column 1. titulo, 2. svartpilen, 3. vitpilen-->
+            <h2>Lo nuevo de las naked...</h2>
+            <!-- direction row -->
+            <article class="card-new-model-1">
+                <div class="new-model-img">
+                    <!-- contenedor con imagen -->
+                    <img src="../assets/images/v801-1.jpg" />
+                </div>
+                <div class="new-model-desc">
+                    <!-- contenedor con texto +info-->
                     <h3>Vitpilen 801</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Dolore hic fugit dicta nemo ab totam dolorem repellat
-                        numquam ratione delectus blanditiis enim, magnam
-                        perspiciatis aliquam corrupti alias, in deleniti? Harum.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Consequuntur, doloremque! Atque, quidem. Inventore, modi provident?
                     </p>
+                    <!-- <button/> de mas información -->
                 </div>
-            </div>
+            </article>
+
+            <!-- direction reverse row -->
+            <article class="card-new-model-2">
+                <div class="new-model-img">
+                    <!-- contenedor con imagen -->
+                    <img src="../assets/images/svartpilen801.png" />
+                </div>
+                <div class="new-model-desc">
+                    <!-- contenedor con texto +info-->
+                    <h3>Svartpilen 801</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Consequuntur, doloremque! Atque, quidem. Inventore, modi provident?
+                    </p>
+                    <!-- <button/> de mas información -->
+                </div>
+            </article>
         </section>
     </main>
 </body>

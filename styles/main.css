@@ -1,13 +1,12 @@
 main {
-    background-color: var(--color-background);
+    background-color: white;
+    background: linear-gradient(to bottom, rgba(14,37,61,1) 0%, rgba(14,37,61,0) 30%);
     padding-top: 10em;
-    padding: 10em 4em 0;
-    /*padding de 10em para que no me tape el header*/
+    padding: 0em 4em 0;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*agregar gap parametrizado*/
 }
 
 .topbar {
@@ -32,7 +31,7 @@ main {
     padding: 1em 0em
 }
 .hero button{
-    margin-left: 6em;
+    margin-left: 10em;
 }
 .sub {
   text-decoration: underline;
@@ -40,26 +39,90 @@ main {
   text-decoration-thickness: 4px;
 }
 
-.new-model {
+.values-bar{
+    background-color:var(--color-primario-value);
+    height: 5em;
+    width: 100vw;
+    padding:0 5em;
     display: flex;
     flex-direction: row;
-    gap: 3em
+    justify-content: space-around;
+    border-top: 2px solid var(--color-borde-suave);
+    border-bottom: 2px solid var(--color-borde-suave);
+}
+.value{
+    display: flex;
+    flex-direction: row;
+    gap: 0.8em;
+    align-items: center;
+}
+.value p{
+    font-size: 1.5em;
+    color: var(--color-circle);
+    font-weight: 600;
+}
+.circle{
+    position: relative;
+    height:2.5em;
+    width: 2.5em;
+    background-color: var(--color-circle);
+    border-radius: 9999px;
+}
+.circle img{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 25em 25em 25em;
+    text-align: center;
+}
+.segment-card img{
+    width:24em;
+}
+.new-model {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    padding: 0 8em;
+    color: greenyellow;
+}
+.card-new-model-1{
+    /* abstraer CSS común a card-modelo */
+    border-radius: 2em;
+    background-color: rgb(66, 66, 66);
+    padding: 1em 1em;
+    display: flex;
+    gap: 4em;
+    /* hasta acá */
+    flex-direction: row;
+}
+.card-new-model-2{
+    /* de acá */
+    border-radius: 2em;
+    background-color: rgb(66, 66, 66);
+    padding: 1em 1em;    
+    display: flex;
+    gap: 4em;
+    /* abstraer */
+    flex-direction: row-reverse;
 }
 
 .new-model-img img {
-    border-radius: 30px;
-    width: 25em;
+    border-radius: 1em;
+    width: 30em;
     height: auto
         /*que todas las imágenes tengan un mismo tamaño, recortar e importar así el navegador no hace el rezicing*/
         /*cuando haga ese cambio, esta descripcion la voy a poder borrar*/
 }
-
-.new-model-desc {
-    gap: 3em;
-}
-
-.new-model-desc h2 {
-    justify-self: center;
+.new-model-desc{
+    padding: 2em 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em
 }
 
 .fuente-fuerte {
