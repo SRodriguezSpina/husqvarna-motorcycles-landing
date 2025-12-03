@@ -47,6 +47,8 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    border-top: 2px solid var(--color-borde-suave);
+    border-bottom: 2px solid var(--color-borde-suave);
 }
 .value{
     display: flex;
@@ -73,6 +75,14 @@ main {
     transform: translate(-50%, -50%);
 }
 
+.grid{
+    display: grid;
+    grid-template-columns: 25em 25em 25em;
+    text-align: center;
+}
+.segment-card img{
+    width:24em;
+}
 .new-model {
     display: flex;
     flex-direction: column;
