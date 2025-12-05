@@ -1,6 +1,5 @@
 main {
     background-color: white;
-    background: linear-gradient(to bottom, rgba(14,37,61,1) 0%, rgba(14,37,61,0) 30%);
     padding-top: 10em;
     padding: 0em 4em 0;
     width: 100%;
@@ -79,10 +78,31 @@ main {
     display: grid;
     grid-template-columns: 25em 25em 25em;
     text-align: center;
+    padding: 3em 0;
+    row-gap: 1.5em;
 }
-.segment-card img{
-    width:24em;
+.segment-card > img{
+    /* solo las fotos dentro de esta clase, no las que se encuentran mas adentro */
+    width: 24em;
+    border-radius: 0.5em;
 }
+
+.title-underline {
+    position: relative;
+    display: inline-block;
+    z-index: 0;
+}
+.title-underline h4{
+    position: relative;
+    z-index: 2;
+}
+.title-underline img {
+    position: absolute;
+    top: -16px;
+    left: -1.5em;    /* arranca debajo del h4 */
+    z-index: 1;
+}
+
 .new-model {
     display: flex;
     flex-direction: column;
