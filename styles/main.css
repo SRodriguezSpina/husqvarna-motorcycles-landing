@@ -74,6 +74,15 @@ main {
     transform: translate(-50%, -50%);
 }
 
+.segments-cards-container {
+    display: flex;
+    flex-direction: column;
+}
+.segments-cards-container > h3{
+    align-self: center;
+    padding: 1em 0 0;
+    font-size: 2em;
+}
 .grid{
     display: grid;
     grid-template-columns: 25em 25em 25em;
@@ -103,47 +112,6 @@ main {
     z-index: 1;
 }
 
-.new-model {
-    display: flex;
-    flex-direction: column;
-    gap: 3em;
-    padding: 0 8em;
-    color: greenyellow;
-}
-.card-new-model-1{
-    /* abstraer CSS común a card-modelo */
-    border-radius: 2em;
-    background-color: rgb(66, 66, 66);
-    padding: 1em 1em;
-    display: flex;
-    gap: 4em;
-    /* hasta acá */
-    flex-direction: row;
-}
-.card-new-model-2{
-    /* de acá */
-    border-radius: 2em;
-    background-color: rgb(66, 66, 66);
-    padding: 1em 1em;    
-    display: flex;
-    gap: 4em;
-    /* abstraer */
-    flex-direction: row-reverse;
-}
-
-.new-model-img img {
-    border-radius: 1em;
-    width: 30em;
-    height: auto
-        /*que todas las imágenes tengan un mismo tamaño, recortar e importar así el navegador no hace el rezicing*/
-        /*cuando haga ese cambio, esta descripcion la voy a poder borrar*/
-}
-.new-model-desc{
-    padding: 2em 0;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5em
-}
 
 .fuente-fuerte {
     color: var(--color-fuente-fuerte);
