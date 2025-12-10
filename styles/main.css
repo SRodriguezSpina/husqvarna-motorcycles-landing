@@ -112,7 +112,37 @@ main {
     z-index: 1;
 }
 
+.cards-container{
+    display: flex;
+    flex-direction: column;
+    /* sacar */
+    gap: 1em;
+    /* ^ */
+    align-items: center;
 
-.fuente-fuerte {
-    color: var(--color-fuente-fuerte);
+}
+.news-card{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid whitesmoke;
+    border-radius: 13px;
+    height: 15em;
+}
+.news-card img{
+    height: 15em;
+    width: auto;
+    border-radius: 10px;
+} 
+.card-text{
+    padding: 0.5em 1em;
+    gap: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.center-card{
+    width: 40em;
+}
+.behind{
+    width: 35em;
 }
