@@ -87,7 +87,7 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background: linear-gradient(to bottom, var(--color-borde-suave) 0%, rgba(255, 255, 255, 0) 35%),
+    background: linear-gradient(to bottom, var(--color-borde-suave) 0%, rgba(255, 255, 255, 0) 20%),
         url(../assets/images/background-fade.jpg) center/cover no-repeat;
 }
 
@@ -112,6 +112,13 @@ main {
     width: 24em;
     border-radius: 0.5em;
     border: 2px solid var(--color-primario);
+    transition: border-color 0.25s ease,
+        transform 0.3s ease;
+}
+.segment-card>img:hover{
+    border-color: var(--color-secundario);
+    transform: scale(1.01);
+
 }
 
 .title-underline {
@@ -135,7 +142,7 @@ main {
 
 .latest-news-container {
     width: 100%;
-    padding: 1em 1em;
+    padding: 1em 3em;
     border-top: 2px solid var(--color-borde-suave);
     border-bottom: 2px solid var(--color-borde-suave);
 }
