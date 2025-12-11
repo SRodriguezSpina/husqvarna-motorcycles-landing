@@ -1,7 +1,7 @@
 main {
     background-color: white;
     padding-top: 10em;
-    padding: 0em 4em 0;
+    padding: 0em 0em 0;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -14,86 +14,111 @@ main {
     flex-direction: row;
     justify-content: space-between;
 }
-.socials{
+
+.socials {
     display: flex;
     flex-direction: row;
     gap: 1em;
 }
 
-.hero{
+.hero {
     padding: 3em 5em;
     align-items: center;
 }
-.hero h1{
+
+.hero h1 {
     font-size: 3em;
     color: var(--color-primario);
     padding: 1em 0em
 }
-.hero button{
+
+.hero button {
     margin-left: 10em;
 }
+
 .sub {
-  text-decoration: underline;
-  text-decoration-color: var(--color-secundario); /* Amarillo Husqvarna */
-  text-decoration-thickness: 4px;
+    text-decoration: underline;
+    text-decoration-color: var(--color-secundario);
+    /* Amarillo Husqvarna */
+    text-decoration-thickness: 4px;
 }
 
-.values-bar{
-    background-color:var(--color-primario-value);
+.values-bar {
+    background-color: var(--color-primario-value);
     height: 5em;
     width: 100vw;
-    padding:0 5em;
+    padding: 0 5em;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     border-top: 2px solid var(--color-borde-suave);
     border-bottom: 2px solid var(--color-borde-suave);
 }
-.value{
+
+.value {
     display: flex;
     flex-direction: row;
     gap: 0.8em;
     align-items: center;
 }
-.value p{
+
+.value p {
     font-size: 1.5em;
     color: var(--color-circle);
     font-weight: 600;
 }
-.circle{
+
+.circle {
     position: relative;
-    height:2.5em;
+    height: 2.5em;
     width: 2.5em;
     background-color: var(--color-circle);
     border-radius: 9999px;
 }
-.circle img{
+
+.circle img {
     position: absolute;
-    top:50%;
-    left:50%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
 }
 
 .segments-cards-container {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    background: linear-gradient(to bottom, var(--color-borde-suave) 0%, rgba(255, 255, 255, 0) 20%),
+        url(../assets/images/background-fade.jpg) center/cover no-repeat;
 }
-.segments-cards-container > h3{
+
+.segments-cards-container>h3 {
     align-self: center;
     padding: 1em 0 0;
     font-size: 2em;
 }
-.grid{
+
+.grid {
+    position: relative;
+    align-self: center;
     display: grid;
     grid-template-columns: 25em 25em 25em;
     text-align: center;
     padding: 3em 0;
     row-gap: 1.5em;
 }
-.segment-card > img{
+
+.segment-card>img {
     /* solo las fotos dentro de esta clase, no las que se encuentran mas adentro */
     width: 24em;
     border-radius: 0.5em;
+    border: 2px solid var(--color-primario);
+    transition: border-color 0.25s ease,
+        transform 0.3s ease;
+}
+.segment-card>img:hover{
+    border-color: var(--color-secundario);
+    transform: scale(1.01);
+
 }
 
 .title-underline {
@@ -101,48 +126,85 @@ main {
     display: inline-block;
     z-index: 0;
 }
-.title-underline h4{
+
+.title-underline h4 {
     position: relative;
     z-index: 2;
 }
+
 .title-underline img {
     position: absolute;
     top: -16px;
-    left: -1.5em;    /* arranca debajo del h4 */
+    left: -1.5em;
+    /* arranca debajo del h4 */
     z-index: 1;
 }
 
-.cards-container{
+.latest-news-container {
+    width: 100%;
+    padding: 1em 3em;
+    border-top: 2px solid var(--color-borde-suave);
+    border-bottom: 2px solid var(--color-borde-suave);
+}
+
+.latest-news-container h3 {
+    position: relative;
+    left: 5em;
+    font-size: 2em;
+    padding: 1em 0;
+}
+
+.cards-container {
     display: flex;
     flex-direction: column;
+    position: relative;
+    padding: 2em;
     /* sacar */
     gap: 1em;
     /* ^ */
     align-items: center;
 
 }
-.news-card{
+
+.news-card {
     display: flex;
     flex-direction: row;
-    border: 2px solid whitesmoke;
+    border: 2px solid var(--color-primario);
     border-radius: 13px;
+    background-color: var(--color-borde-suave);
     height: 15em;
 }
-.news-card img{
+
+.news-card img {
     height: 15em;
     width: auto;
     border-radius: 10px;
-} 
-.card-text{
+}
+
+.card-text {
     padding: 0.5em 1em;
     gap: 1em;
     display: flex;
     flex-direction: column;
 }
 
-.center-card{
+.center-card {
     width: 40em;
+    position: relative;
+    z-index: 3;
 }
-.behind{
+
+.behind {
     width: 35em;
+    top: 0em;
+    position: absolute;
+    opacity: 0.6;
+}
+
+.left-card {
+    left: 1em;
+}
+
+.right-card {
+    right: 1em;
 }
