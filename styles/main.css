@@ -207,3 +207,37 @@ main {
 .right-card {
     right: 1em;
 }
+
+.newsletter-form{
+    width: 100%;
+    /* display column (on-block) */
+}
+.newsletter-form h3 {
+    position: relative;
+    left: 5em;
+    font-size: 2em;
+    padding: 1em 0;
+}
+.form-container{
+    /* position relative */
+}
+.form-container form{
+    align-items: center;
+    padding: 2em;
+    width: 30em;
+    height: 25em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+form input{
+    height: 3em;
+    width: 20em;
+    padding: 0 1em;
+}
+
+form button{
+    height: 2.5em;
+    width: 12em;
+}
