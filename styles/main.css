@@ -209,6 +209,7 @@ main {
 }
 
 .newsletter-form{
+    background: url(../assets/images/v801-6.jpg) no-repeat center center;
     width: 100%;
     /* display column (on-block) */
 }
@@ -218,13 +219,13 @@ main {
     font-size: 2em;
     padding: 1em 0;
 }
-.form-container{
-    /* position relative */
-}
 .form-container form{
+    background-color: rgba(180, 198, 214, 0.3);
+    border-radius: 1em;
     align-items: center;
     padding: 2em;
-    width: 30em;
+    margin: 0 10em;
+    width: 25em;
     height: 25em;
     display: flex;
     flex-direction: column;
