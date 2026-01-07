@@ -82,10 +82,57 @@ main {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 /* About us */
-.about-us{
+.about-us {
     width: 100%;
-    height: 35em;
+    height: 32em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-background2);
+    /* ese color de fondo para diferenciar */
+}
+
+.about-us-container {
+    width: 75%;
+    height: 30em;
+    border-radius: 1em;
+    border: 2px solid var(--color-primario);
+    background: var(--color-background2);
+    background: linear-gradient(150deg, rgba(250, 250, 250, 0.55) 88%, rgba(255, 204, 0, 1) 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    overflow: hidden;
+    box-shadow: 0 1px 12px rgba(0,0,0,0.4);
+}
+
+.about-us-line {
+    width: 0.1em;
+    height: 23em;
+    margin: 0;
+    align-self: center;
+    background-color: black;
+}
+
+.about-us-text {
+    padding: 2em;
+    position: relative;
+}
+.about-us-text > img{
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+}
+
+.about-us-images {
+    width: 15em;
+    margin: 0 2em;
+}
+
+.about-us-images>img {
+    margin-top: -2em;
 }
 
 /*  */
@@ -121,7 +168,8 @@ main {
     transition: border-color 0.25s ease,
         transform 0.3s ease;
 }
-.segment-card>img:hover{
+
+.segment-card>img:hover {
     border-color: var(--color-secundario);
     transform: scale(1.01);
 
@@ -214,18 +262,20 @@ main {
     right: 1em;
 }
 
-.newsletter-form{
+.newsletter-form {
     background: url(../assets/images/v801-6.jpg) no-repeat center center;
     width: 100%;
     /* display column (on-block) */
 }
+
 .newsletter-form h3 {
     position: relative;
     left: 5em;
     font-size: 2em;
     padding: 1em 0;
 }
-.form-container form{
+
+.form-container form {
     background-color: rgba(180, 198, 214, 0.3);
     border-radius: 1em;
     align-items: center;
@@ -238,13 +288,13 @@ main {
     gap: 2em;
 }
 
-form input{
+form input {
     height: 3em;
     width: 20em;
     padding: 0 1em;
 }
 
-form button{
+form button {
     height: 2.5em;
     width: 12em;
 }
