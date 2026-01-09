@@ -90,12 +90,14 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--color-background2);
-    /* ese color de fondo para diferenciar */
+    /* background-color: var(--color-background2); */
+    background: #D4D4D4;
+    background: linear-gradient(349deg, rgba(212, 212, 212, 1) 32%, rgba(230, 230, 223, 1) 80%)
+        /* ese color de fondo para diferenciar */
 }
 
 .about-us-container {
-    width: 75%;
+    width: 70%;
     height: 30em;
     border-radius: 1em;
     border: 2px solid var(--color-primario);
@@ -105,7 +107,7 @@ main {
     flex-direction: row;
     justify-content: space-evenly;
     overflow: hidden;
-    box-shadow: 0 1px 12px rgba(0,0,0,0.4);
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.4);
 }
 
 .about-us-line {
@@ -120,7 +122,8 @@ main {
     padding: 2em;
     position: relative;
 }
-.about-us-text > img{
+
+.about-us-text>img {
     position: absolute;
     bottom: 1em;
     right: 1em;
@@ -140,7 +143,7 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background: linear-gradient(to bottom, var(--color-primario) 0%, rgba(255, 255, 255, 0) 15%),
+    background: linear-gradient(to bottom, #d4d4d4 0%, rgba(255, 255, 255, 0) 20%),
         url(../assets/images/background-fade.jpg) center/cover no-repeat;
 }
 
@@ -161,18 +164,16 @@ main {
 }
 
 .segment-card>img {
-    /* solo las fotos dentro de esta clase, no las que se encuentran mas adentro */
     width: 24em;
     border-radius: 0.5em;
-    border: 2px solid var(--color-primario);
+    border: 3px solid var(--color-primario);
     transition: border-color 0.25s ease,
         transform 0.3s ease;
 }
 
 .segment-card>img:hover {
     border-color: var(--color-secundario);
-    transform: scale(1.01);
-
+    transform: scale(1.04);
 }
 
 .title-underline {
@@ -276,25 +277,37 @@ main {
 }
 
 .form-container form {
-    background-color: rgba(180, 198, 214, 0.3);
+    background-color: rgba(180, 198, 214, 0.5);
     border-radius: 1em;
     align-items: center;
     padding: 2em;
     margin: 4em 10em;
-    width: 25em;
+    width: 30em;
     height: 25em;
     display: flex;
     flex-direction: column;
-    gap: 2em;
+    gap: 1em;
 }
 
 form input {
     height: 3em;
     width: 20em;
     padding: 0 1em;
+    background: none;
+    border: none;
+    border-bottom: 3px solid var(--color-primario);
+    font-size: 1em;
+
+    transition: padding 0.25s ease;
+}
+
+form input:focus {
+    outline: none;
+    padding: 0 1.3em;
 }
 
 form button {
-    height: 2.5em;
+    height: 2.3em;
     width: 12em;
+    
 }
