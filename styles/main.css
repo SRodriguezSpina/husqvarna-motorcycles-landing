@@ -90,12 +90,14 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--color-background2);
-    /* ese color de fondo para diferenciar */
+    /* background-color: var(--color-background2); */
+    background: #D4D4D4;
+    background: linear-gradient(349deg, rgba(212, 212, 212, 1) 32%, rgba(230, 230, 223, 1) 80%)
+        /* ese color de fondo para diferenciar */
 }
 
 .about-us-container {
-    width: 75%;
+    width: 70%;
     height: 30em;
     border-radius: 1em;
     border: 2px solid var(--color-primario);
@@ -105,7 +107,7 @@ main {
     flex-direction: row;
     justify-content: space-evenly;
     overflow: hidden;
-    box-shadow: 0 1px 12px rgba(0,0,0,0.4);
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.4);
 }
 
 .about-us-line {
@@ -120,7 +122,8 @@ main {
     padding: 2em;
     position: relative;
 }
-.about-us-text > img{
+
+.about-us-text>img {
     position: absolute;
     bottom: 1em;
     right: 1em;
@@ -140,7 +143,7 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background: linear-gradient(to bottom, var(--color-primario) 0%, rgba(255, 255, 255, 0) 15%),
+    background: linear-gradient(to bottom, #d4d4d4 0%, rgba(255, 255, 255, 0) 20%),
         url(../assets/images/background-fade.jpg) center/cover no-repeat;
 }
 
