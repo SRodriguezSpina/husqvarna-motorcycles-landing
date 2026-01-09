@@ -164,18 +164,16 @@ main {
 }
 
 .segment-card>img {
-    /* solo las fotos dentro de esta clase, no las que se encuentran mas adentro */
     width: 24em;
     border-radius: 0.5em;
-    border: 2px solid var(--color-primario);
+    border: 3px solid var(--color-primario);
     transition: border-color 0.25s ease,
         transform 0.3s ease;
 }
 
 .segment-card>img:hover {
     border-color: var(--color-secundario);
-    transform: scale(1.01);
-
+    transform: scale(1.04);
 }
 
 .title-underline {
@@ -279,25 +277,37 @@ main {
 }
 
 .form-container form {
-    background-color: rgba(180, 198, 214, 0.3);
+    background-color: rgba(180, 198, 214, 0.5);
     border-radius: 1em;
     align-items: center;
     padding: 2em;
     margin: 4em 10em;
-    width: 25em;
+    width: 30em;
     height: 25em;
     display: flex;
     flex-direction: column;
-    gap: 2em;
+    gap: 1em;
 }
 
 form input {
     height: 3em;
     width: 20em;
     padding: 0 1em;
+    background: none;
+    border: none;
+    border-bottom: 3px solid var(--color-primario);
+    font-size: 1em;
+
+    transition: padding 0.25s ease;
+}
+
+form input:focus {
+    outline: none;
+    padding: 0 1.3em;
 }
 
 form button {
-    height: 2.5em;
+    height: 2.3em;
     width: 12em;
+    
 }
