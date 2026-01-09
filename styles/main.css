@@ -283,10 +283,10 @@ main {
     padding: 2em;
     margin: 4em 10em;
     width: 30em;
-    height: 25em;
+    height: 30em;
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    justify-content: space-around;
 }
 
 form input {
@@ -301,13 +301,37 @@ form input {
     transition: padding 0.25s ease;
 }
 
+form input::placeholder {
+    color: var(--color-placeholder);
+}
+
 form input:focus {
     outline: none;
     padding: 0 1.3em;
 }
 
 form button {
-    height: 2.3em;
+    height: 2.5em;
     width: 12em;
-    
+    font-size: 1em;
+    background: linear-gradient(318deg, var(--color-secundario) 0%, var(--color-primario) 90%);
+    background-size: 200% 200%;
+    background-position: left;
+    color: var(--color-fuente-claro);
+    border-radius: 0.5em;
+    border: 1px solid var(--color-primario);
+
+    transition: background-position 0.4s ease,
+        transform 0.2s ease,
+        color 0.4s ease;
+}
+
+form button:hover {
+    background-position: right;
+    transform: translateY(-2px);
+    color: var(--color-fuente-fuerte);
+}
+.hidden{
+    position: absolute;
+    left: -9999px;
 }
