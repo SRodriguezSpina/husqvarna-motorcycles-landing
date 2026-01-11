@@ -193,9 +193,18 @@
             <article class="form-container">
                 <form>
                     <img class="logo" src="../assets/images/husqvarna-logo.png">
-                    <input type="text" placeholder="Nombre">
-                    <input type="text" placeholder="Apellido">
-                    <input type="email" placeholder="Email">
+                    <div>
+                        <label for="name" class="hidden">Nombre</label>
+                        <input id="name" type="text">
+                    </div>
+                    <div>
+                        <label for="lastname" class="hidden">Apellido</label>
+                        <input id="lastname" type="text">
+                    </div>
+                    <div>
+                        <label for="email" class="hidden">Email</label>
+                        <input id="email" type="email" placeholder="ejemplo@gmail.com">
+                    </div>
                     <button type="submit">Registrarse</button>
                     <p>* Formulario con fines ilustrativos, no tiene lógica</p>
                 </form>
