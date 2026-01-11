@@ -264,7 +264,8 @@ main {
 }
 
 .newsletter-form {
-    background: url(../assets/images/v801-6.jpg) no-repeat center center;
+    background: url(../assets/images/form-background.jpg) no-repeat center;
+    background-size: cover; /* acomodo la imagen para que cubra todo el contenedor*/
     width: 100%;
     /* display column (on-block) */
 }
@@ -277,7 +278,7 @@ main {
 }
 
 .form-container form {
-    background-color: rgba(180, 198, 214, 0.5);
+    background-color: rgba(180, 198, 214, 0.35);
     border-radius: 1em;
     align-items: center;
     padding: 2em;
@@ -319,7 +320,7 @@ form button {
     background-position: left;
     color: var(--color-fuente-claro);
     border-radius: 0.5em;
-    border: 1px solid var(--color-primario);
+    border: 2px solid var(--color-primario);
 
     transition: background-position 0.4s ease,
         transform 0.2s ease,
