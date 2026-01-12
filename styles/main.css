@@ -111,11 +111,11 @@ main {
 }
 
 .about-us-line {
-    width: 0.1em;
+    width: 0.4em;
     height: 23em;
     margin: 0;
     align-self: center;
-    background-color: black;
+    background-color: var(--color-primario);
 }
 
 .about-us-text {
@@ -267,6 +267,7 @@ main {
     background: url(../assets/images/form-background.jpg) no-repeat center;
     background-size: cover; /* acomodo la imagen para que cubra todo el contenedor*/
     width: 100%;
+    height: 100vh;
     /* display column (on-block) */
 }
 
@@ -335,4 +336,35 @@ form button:hover {
 .hidden{
     position: absolute;
     left: -9999px;
+}
+
+.footer{
+    height: 12em;
+    width: 100%;
+    background-color: var(--color-background2);
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4em;
+}
+
+.footer-column{
+    width: 15em;
+}
+.footer-column h3{
+    justify-self: center;
+    margin: 1em 0;
+}
+
+.logo-column{
+    position: relative;
+}
+.footer-logo{
+    width: 8em;
+    position: absolute;
+    top: 2em;
+    left: 2em;
 }
