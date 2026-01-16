@@ -321,7 +321,7 @@ form button {
     background-position: left;
     color: var(--color-fuente-claro);
     border-radius: 0.5em;
-    border: 2px solid var(--color-primario);
+    border: none;
 
     transition: background-position 0.4s ease,
         transform 0.2s ease,
@@ -339,20 +339,20 @@ form button:hover {
 }
 
 .footer{
-    height: 12em;
+    height: 15em;
     width: 100%;
-    background-color: var(--color-background2);
+    background-color: var(--color-background-footer);
 }
 
 .footer-container{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 4em;
+    gap: 3em;
 }
 
 .footer-column{
-    width: 15em;
+    width: 18em;
 }
 .footer-column h3{
     justify-self: center;
@@ -366,5 +366,18 @@ form button:hover {
     width: 8em;
     position: absolute;
     top: 2em;
-    left: 2em;
+    left: 4em;
+}
+/* tamaño de los iconos */
+li{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    margin: 0 0 1em 0;
+}
+li img{
+    height: 1.3em;
+}
+.p-footer{
+    margin: 0 0 1em 0;
 }
