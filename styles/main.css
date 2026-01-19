@@ -320,8 +320,8 @@ form button {
     background-size: 200% 200%;
     background-position: left;
     color: var(--color-fuente-claro);
-    border-radius: 0.5em;
-    border: 2px solid var(--color-primario);
+    border-radius: 9999px;
+    border: none;
 
     transition: background-position 0.4s ease,
         transform 0.2s ease,
@@ -339,24 +339,28 @@ form button:hover {
 }
 
 .footer{
-    height: 12em;
+    height: 13em;
     width: 100%;
-    background-color: var(--color-background2);
+    padding: 1em 0;
+    background-color: var(--color-background-footer);
 }
 
 .footer-container{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 4em;
+    gap: 3em;
 }
 
 .footer-column{
-    width: 15em;
+    width: 20em;
+}
+.footer-column-logo{
+    width: 10em;
 }
 .footer-column h3{
     justify-self: center;
-    margin: 1em 0;
+    margin: 0 0 1em 0;
 }
 
 .logo-column{
@@ -367,4 +371,18 @@ form button:hover {
     position: absolute;
     top: 2em;
     left: 2em;
+}
+/* tamaño de los iconos */
+li{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+    margin: 0 0 1em 0;
+    padding: 0 3em;
+}
+li img{
+    height: 1.3em;
+}
+.p-footer{
+    margin: 0 0 1em 0;
 }
