@@ -128,6 +128,12 @@ main {
     position: relative;
 }
 
+.about-us-text p{
+    line-height: 1.6em;
+}
+.about-us-text h3{
+    margin-bottom: 0.5em;
+}
 .about-us-text>img {
     position: absolute;
     bottom: 1em;
