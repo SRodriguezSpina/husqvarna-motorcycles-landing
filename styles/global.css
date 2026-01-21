@@ -24,7 +24,8 @@
   /*lo dejo y lo cambio para las cards*/
   --radio-contenedor: 0.5rem;
   /*ídem arriba, tengo que moverlo a css de modelos*/
-  --font-family: "preconnect", sans-serif;
+  --font-title: 'Saira', sans-sherif;
+  --font-text: 'Inter', sans-sherif; 
 }
 
 * {
@@ -41,7 +42,7 @@ body {
   justify-content: center;
   align-items: center;
   overflow-x: hidden;
-  font-family: var(--font-family);
+  font-family: var(--font-text);
 }
 
 header {
@@ -101,22 +102,25 @@ header {
   width: auto;
   align-self: flex-start;
 }
-
-h1,
-h2 {
-  color: white;
+h1, h2, h3, h4{
+  font-family: var(--font-title);
 }
-
 h1 {
   font-size: 2.6rem;
+  font-weight: 700;
 }
 
 h2 {
   font-size: 1.3rem;
+  font-weight: 600;
 }
 
 h3 {
   font-size: 1.2rem;
+  font-weight: 600;
+}
+h4{
+  font-weight: 500;
 }
 
 p {

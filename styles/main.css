@@ -22,24 +22,29 @@ main {
 }
 
 .hero {
-    padding: 3em 5em;
-    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
-.hero h1 {
+.hero-inner {
+    max-width: 1200px;
+    width: 100%;
+    padding: 3em 5em;
+}
+
+.hero-inner h1 {
     font-size: 3em;
     color: var(--color-primario);
-    padding: 1em 0em
+    padding: 0.5em 0;
 }
 
-.hero button {
+.hero-inner button {
     margin-left: 10em;
 }
 
 .sub {
     text-decoration: underline;
     text-decoration-color: var(--color-secundario);
-    /* Amarillo Husqvarna */
     text-decoration-thickness: 4px;
 }
 
@@ -284,7 +289,7 @@ form button:hover {
 .footer {
     height: 11em;
     width: 100%;
-    padding: 1em 0;
+    padding: 0.5em 0;
     background-color: var(--color-background-footer);
 }
 
