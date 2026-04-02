@@ -50,7 +50,7 @@ main {
 .values-bar {
     background-color: var(--color-primario-value);
     height: 5em;
-    width: 100vw;
+    width: 100%;
     padding: 0 5em;
     display: flex;
     flex-direction: row;
