@@ -170,6 +170,9 @@ p {
   h1 {
     font-size: 2.1rem;
   }
+  .grid {
+        grid-template-columns: repeat(auto-fill, minmax(min(100%, 19em), 1fr));
+    }
 }
 
 /* Breakpoint mobile */
@@ -190,4 +193,7 @@ p {
     padding-top: 0rem;
     padding-bottom: 4rem;
   }
+  .grid {
+        grid-template-columns: 1fr; /* una sola columna */
+    }
 }
