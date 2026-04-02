@@ -141,12 +141,16 @@ main {
 }
 
 .about-us-images {
-    width: 15em;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    align-self: stretch;
     margin: 0 2em;
 }
-
-.about-us-images>img {
-    margin-top: -2em;
+.about-us-images img {
+    flex: 1;
+    object-fit: cover;
+    width: 100%;
 }
 
 /*  */
@@ -177,7 +181,6 @@ main {
 }
 
 .segment-card>img {
-    width: 24em;
     border-radius: 0.5em;
     border: 3px solid var(--color-primario);
     transition: border-color 0.25s ease,

@@ -91,6 +91,13 @@ header {
   transform: translateY(0);
 }
 
+img{
+    max-width: 100%;
+    display: block; 
+    /* display block elimina el espacio vacio que*/ 
+    /* agrega el navegador por defecto por ser inline*/
+}
+
 .logo {
   /*height: 50px;*/
   height: 3em;
