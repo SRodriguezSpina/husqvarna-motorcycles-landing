@@ -91,7 +91,7 @@ main {
 /* About us */
 .about-us {
     width: 100%;
-    height: 32em;
+    min-height: 32em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,10 +103,9 @@ main {
 
 .about-us-container {
     width: 70%;
-    height: 30em;
+    min-height: 30em;
     border-radius: 1em;
     border: 2px solid var(--color-primario);
-    background: var(--color-background2);
     background: linear-gradient(150deg, rgba(250, 250, 250, 0.55) 88%, rgba(255, 204, 0, 1) 100%);
     display: flex;
     flex-direction: row;
@@ -143,14 +142,13 @@ main {
 .about-us-images {
     display: flex;
     flex-direction: column;
-    flex-basis: 50%;
+    flex-basis: 80%;
     align-self: stretch;
     margin: 0 2em;
 }
 .about-us-images img {
     flex: 1;
     object-fit: cover;
-    width: 100%;
 }
 
 /*  */
@@ -296,7 +294,7 @@ form button:hover {
 }
 
 .footer {
-    height: 11em;
+    min-height: 11em;
     width: 100%;
     padding: 0.5em 0;
     background-color: var(--color-background-footer);
