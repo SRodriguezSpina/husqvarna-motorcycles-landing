@@ -234,8 +234,8 @@ main {
     align-items: center;
     padding: 2em;
     margin: 0 0 0 8%; 
-    width: 30em;
-    height: 30em;
+    width: min(30em, 90%);
+    min-height: 30em;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
