@@ -20,6 +20,7 @@
   --color-borde-suave: #ccbcbc;
   --color-circle: #ffcc00;
   --color-placeholder: #00000091;
+
   --ancho-contenedor: 71.80rem;
   /*lo dejo y lo cambio para las cards*/
   --radio-contenedor: 0.5rem;
@@ -138,11 +139,10 @@ p {
   color: var(--color-fuente-fuerte);
 }
 
-.contenedor {
-  width: 100%;
-  background-color: var(--color-fuente-suave);
-  border-radius: var(--radio-contenedor);
-  padding: 1.5rem;
+.contenedor{
+  max-width: var(--ancho-contenedor);
+  margin-inline: auto;
+  padding-inline: 1.5rem;
 }
 
 .elementos-espaciado {
