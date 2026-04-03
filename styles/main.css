@@ -131,7 +131,7 @@ main {
     line-height: 1.6em;
 }
 
-.about-us-text h3 {
+.about-us-text h4 {
     margin-bottom: 0.5em;
 }
 
@@ -156,7 +156,7 @@ main {
 
 /*  */
 .segments-cards-container {
-    padding: 3em 2em;
+    padding: 0 0 2em 0;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -165,19 +165,13 @@ main {
         url(../assets/images/background-fade.jpg) center/cover no-repeat;
 }
 
-.segments-cards-container>h3 {
-    align-self: center;
-    padding: 1em 0 0;
-    font-size: 2em;
-}
-
 .grid {
     position: relative;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, minmax(min(100%, 19em), 1fr));
+    grid-template-columns: repeat(3, minmax(min(100%, 18em), 1fr));
     text-align: center;
-    padding: 3em 0;
+    padding: 0 0 3em 0;
     row-gap: 1.5em;
     column-gap: 1em;
 }
@@ -207,10 +201,11 @@ main {
 
 .title-underline img {
     position: absolute;
-    top: -16px;
-    left: -1.5em;
-    /* arranca debajo del h4 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 1;
+    width: 120%;
 }
 
 .section-divider {
@@ -227,11 +222,6 @@ main {
     width: 100%;
     height: 100vh;
     /* display column (on-block) */
-}
-
-.newsletter-form h3 {
-    font-size: 2em;
-    padding: 1em 0 1em 5%;
 }
 
 .form-container form {
@@ -306,19 +296,23 @@ form button:hover {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 3em;
+    gap: 2em;
 }
 
 .footer-column {
-    width: 20em;
+    width: min(20em, 100%);
 }
 
 .footer-column-logo {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: flex-start;
     width: 10em;
 }
 
-.footer-column h3 {
-    color: var(--color-fuente-footer-h3);
+.footer-column h4 {
+    color: var(--color-fuente-footer-h4);
     font-weight: 600;
     letter-spacing: 0.05em;
     justify-self: center;
@@ -331,9 +325,6 @@ form button:hover {
 
 .footer-logo {
     width: 5em;
-    position: absolute;
-    top: 1.5em;
-    left: 3em;
 }
 
 /* tamaño de los iconos */
