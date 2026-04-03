@@ -36,7 +36,6 @@ main {
 }
 
 .hero-inner h1 {
-    font-size: 3em;
     color: var(--color-primario);
     padding: 0.5em 0;
 }
