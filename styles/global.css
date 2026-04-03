@@ -12,7 +12,7 @@
   --color-background2:#fcfcf0;
   --color-background-footer:#0b1f36;
   --color-fuente-fuerte: #000000;
-  --color-fuente-footer-h3: #ffffff;
+  --color-fuente-footer-h4: #ffffff;
   --color-fuente-footer-p: #cbd5e1;
   --color-fuente-claro: #dfdfdf;
   --color-fuente-medio: #967d65;
@@ -124,11 +124,15 @@ h2 {
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: 2.2em;
+  font-family: var(--font-title);
   font-weight: 600;
+  padding: 1em 0 1em 5%;
 }
 h4{
-  font-weight: 500;
+  font-size: 1.3em;
+  font-weight: 600;
+  font-family: var(--font-title);
 }
 
 p {
