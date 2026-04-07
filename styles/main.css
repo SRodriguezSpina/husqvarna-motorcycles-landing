@@ -143,9 +143,9 @@ main {
 .about-us-images {
     display: flex;
     flex-direction: column;
-    flex-basis: 80%;
+    flex-basis: 120%;
     align-self: stretch;
-    margin: 0 2em;
+    margin: 0 1em;
 }
 
 .about-us-images img {
@@ -270,13 +270,19 @@ form button {
 
     transition: background-position 0.4s ease,
         transform 0.2s ease,
+        box-shadow 0.2s ease,
         color 0.4s ease;
 }
 
 form button:hover {
     background-position: right;
     transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     color: var(--color-fuente-fuerte);
+}
+
+form p {
+    font-size: 0.7em;
 }
 
 .hidden {
@@ -307,15 +313,15 @@ form button:hover {
     flex-shrink: 0;
     align-items: center;
     justify-content: flex-start;
-    width: 10em;
+    width: 6em;
 }
 
 .footer-column h4 {
     color: var(--color-fuente-footer-h4);
-    font-weight: 600;
+    font-size: 1.4em;
     letter-spacing: 0.05em;
     justify-self: center;
-    margin: 0 0 0.5em 0;
+    margin: 0 0 0.2em 0;
 }
 
 .logo-column {
