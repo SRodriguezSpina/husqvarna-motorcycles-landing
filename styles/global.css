@@ -56,13 +56,6 @@ header {
   padding: 1em 3em;
 }
 
-.container-boton {
-  padding: 1em 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-}
-
 .boton-navegacion {
   height: 3.5em;
   padding: 0 1.8em;
@@ -97,18 +90,6 @@ img {
   display: block;
   /* display block elimina el espacio vacio que*/
   /* agrega el navegador por defecto por ser inline*/
-}
-
-.logo {
-  /*height: 50px;*/
-  height: 3em;
-  width: 3em;
-}
-
-.bandera {
-  height: 1em;
-  width: auto;
-  align-self: flex-start;
 }
 
 h1,
@@ -237,6 +218,10 @@ p {
   }
 
   /*  */
+  .footer {
+    min-height: 9em;
+  }
+
   .footer-column-logo {
     width: 5em;
   }
@@ -248,12 +233,18 @@ p {
   .footer-column h4 {
     font-size: 1.2em;
   }
+
+  .p-footer {
+    font-size: 0.90em;
+  }
 }
 
 /* Breakpoint mobile */
 @media (max-width: 767px) {
+
+  /* mínimo de 320px */
   h1 {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
   }
 
   h2 {
@@ -268,9 +259,41 @@ p {
     font-size: 0.9rem;
   }
 
+  header {
+    padding: 1em;
+  }
+
   body {
     padding-top: 0rem;
     padding-bottom: 4rem;
+  }
+
+  /*  */
+  .socials {
+    display: none;
+  }
+
+  .bandera {
+    display: none;
+  }
+
+  .hero {
+    margin-top: 6em;
+    justify-content: center;
+  }
+
+  .hero-inner {
+    width: 100%;
+    margin-left: 0;
+  }
+  .hero-inner h1{
+    padding: 0.8em 0;
+  }
+
+  .boton-navegacion {
+    height: 3em;
+    padding: 0 1em;
+    font-size: 0.8rem;
   }
 
   .grid {

@@ -21,6 +21,18 @@ main {
     gap: 1em;
 }
 
+.logo {
+    /*height: 50px;*/
+    height: 3em;
+    width: 3em;
+}
+
+.bandera {
+    height: 1em;
+    width: auto;
+    align-self: flex-start;
+}
+
 .hero {
     display: flex;
     justify-content: flex-start;
@@ -38,6 +50,13 @@ main {
 .hero-inner h1 {
     color: var(--color-primario);
     padding: 0.5em 0;
+}
+
+.container-boton {
+    padding: 1em 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .sub {
@@ -291,7 +310,7 @@ form p {
 }
 
 .footer {
-    min-height: 11em;
+    min-height: 10em;
     width: 100%;
     padding: 0.5em 0;
     background-color: var(--color-background-footer);
