@@ -3,7 +3,8 @@ Responsive landing page built as a practice project to maintain and improve HTML
 
 ## 📸 Preview
 ![first screen](assets/images/screenshot.png)
-<!-- ## Demo -->
+## 💽 Demo
+[Github Pages](https://srodriguezspina.github.io/husqvarna-motorcycles-landing/)
 ## 🧩 Features
 - Responsive design (desktop, tablet, mobile)
 - Layout built with Flexbox
