@@ -180,10 +180,6 @@ p {
   }
 
   /*  */
-  .values-bar .contenedor {
-    height: 4em;
-  }
-
   .value {
     gap: 0.5em;
   }
@@ -193,8 +189,8 @@ p {
   }
 
   .circle {
-    height: 2.3em;
-    width: 2.3em;
+    min-height: 2.3em;
+    min-width: 2.3em;
   }
 
   /*  */
@@ -252,11 +248,18 @@ p {
   }
 
   h3 {
-    font-size: 1rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding: 1em 0 0.8em 5%;
+    line-height: 1.2;
+  }
+
+  h4 {
+    font-size: 1.3em;
   }
 
   p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   header {
@@ -264,8 +267,11 @@ p {
   }
 
   body {
-    padding-top: 0rem;
-    padding-bottom: 4rem;
+    padding: 0rem;
+  }
+
+  .contenedor {
+    padding: 1rem 1rem 1.3rem 1rem
   }
 
   /*  */
@@ -286,7 +292,8 @@ p {
     width: 100%;
     margin-left: 0;
   }
-  .hero-inner h1{
+
+  .hero-inner h1 {
     padding: 0.8em 0;
   }
 
@@ -296,8 +303,79 @@ p {
     font-size: 0.8rem;
   }
 
-  .grid {
-    grid-template-columns: 1fr;
-    /* una sola columna */
+  /*  */
+  .values-bar .contenedor {
+    grid-template-columns: repeat(2, 1fr);
   }
+
+  .value p {
+    white-space: normal;
+    font-size: 1em;
+  }
+
+  /*  */
+  .about-us {
+    min-height: 22em;
+  }
+
+  .about-us-container {
+    width: 90%;
+    min-height: 19em;
+  }
+
+  .about-us-images {
+    display: none;
+  }
+
+  .about-us-line {
+    display: none;
+  }
+
+  .about-us-text {
+    padding: 0;
+  }
+
+  .about-us-text>img {
+    height: 2em;
+    width: auto;
+    bottom: -1em;
+    right: 0;
+  }
+
+  /*  */
+  .grid {
+    grid-template-columns: repeat(2, minmax(9em, 1fr));
+    column-gap: 0.3em;
+    row-gap: 0.6em;
+  }
+
+  .segment-card>img {
+    border-radius: 0.3em;
+    border: 2px solid var(--color-primario);
+  }
+
+  /*  */
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    text-align: center;
+  }
+
+  .footer-column {
+    width: 100%;
+  }
+
+  .footer-column-logo {
+    justify-content: center;
+  }
+  .footer-logo{
+    width: 3em;
+  }
+
+  li {
+    justify-self: center;
+    margin: 0;
+  }
+
 }
