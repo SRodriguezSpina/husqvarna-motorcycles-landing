@@ -180,10 +180,6 @@ p {
   }
 
   /*  */
-  .values-bar .contenedor {
-    height: 4em;
-  }
-
   .value {
     gap: 0.5em;
   }
@@ -193,8 +189,8 @@ p {
   }
 
   .circle {
-    height: 2.3em;
-    width: 2.3em;
+    min-height: 2.3em;
+    min-width: 2.3em;
   }
 
   /*  */
@@ -286,7 +282,8 @@ p {
     width: 100%;
     margin-left: 0;
   }
-  .hero-inner h1{
+
+  .hero-inner h1 {
     padding: 0.8em 0;
   }
 
@@ -296,6 +293,14 @@ p {
     font-size: 0.8rem;
   }
 
+  /*  */
+  .values-bar .contenedor{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .value p{
+    white-space: normal;
+  }
+  /*  */
   .grid {
     grid-template-columns: 1fr;
     /* una sola columna */
